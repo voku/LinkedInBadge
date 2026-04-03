@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
-import { Upload, Download, ZoomIn, Move, Terminal, Share2 } from "lucide-react";
+import { Upload, Download, ZoomIn, Move, Terminal, Share2, Github } from "lucide-react";
 
 // --- Konstanten & Presets ---
 const PRESETS = [
@@ -26,6 +26,7 @@ const TRANSLATIONS = {
     btnChoose: "Choose Photo",
     btnExport: "Export",
     btnShare: "Share",
+    contribute: "Contribute on GitHub",
     customHumor: "Custom developer mode activated?",
     customDesc: (text: string) => `Show your network your individual developer status. You'll get this frame with the text "${text}" for your profile.`,
     getStarted: "Get started",
@@ -46,6 +47,7 @@ const TRANSLATIONS = {
     btnChoose: "Foto wählen",
     btnExport: "Export",
     btnShare: "Teilen",
+    contribute: "Auf GitHub beitragen",
     customHumor: "Custom developer mode activated?",
     customDesc: (text: string) => `Zeigen Sie Ihrem Netzwerk Ihren individuellen Entwickler-Status. Sie erhalten diesen Rahmen mit dem Schriftzug „${text}“ für Ihr Profil.`,
     getStarted: "Jetzt starten",
@@ -627,6 +629,18 @@ export default function App() {
               </button>
             </div>
           </div>
+        </div>
+
+        <div className="pb-4 text-center">
+          <a
+            href="https://github.com/voku/LinkedInBadge"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-slate-200"
+          >
+            <Github size={16} />
+            {t.contribute}
+          </a>
         </div>
 
       </div>
