@@ -427,6 +427,7 @@ export default function App() {
         await navigator.share({
           title: t.shareTitle,
           text: t.shareText(text),
+          url: "https://voku.github.io/LinkedInBadge/",
           files: [file]
         });
       } else {
