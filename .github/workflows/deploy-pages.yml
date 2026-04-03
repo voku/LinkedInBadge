@@ -36,9 +36,7 @@ jobs:
         run: npm run lint
 
       - name: Build
-        run: npm run build
-        env:
-          VITE_BASE_PATH: /LinkedInBadge/
+        run: npm run build:pages
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
