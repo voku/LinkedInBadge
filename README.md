@@ -63,7 +63,7 @@ npm run preview
 
 ## GitHub Pages Deployment
 
-This repository includes a GitHub Actions workflow at `/home/runner/work/LinkedInBadge/LinkedInBadge/.github/workflows/deploy-pages.yml` that:
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml` that:
 
 - installs dependencies with `npm ci`
 - runs `npm run lint`
@@ -91,12 +91,12 @@ You are reviewing the LinkedInBadge repository. Identify the key files involved 
 
 ## Repository Structure
 
-- `/home/runner/work/LinkedInBadge/LinkedInBadge/src/App.tsx` — main application UI and badge generator logic
-- `/home/runner/work/LinkedInBadge/LinkedInBadge/src/main.tsx` — React entry point
-- `/home/runner/work/LinkedInBadge/LinkedInBadge/index.html` — HTML shell, favicon, and social metadata
-- `/home/runner/work/LinkedInBadge/LinkedInBadge/public/` — static assets such as the favicon and social preview
-- `/home/runner/work/LinkedInBadge/LinkedInBadge/vite.config.ts` — Vite configuration, including the deployment base path
-- `/home/runner/work/LinkedInBadge/LinkedInBadge/.github/workflows/deploy-pages.yml` — GitHub Pages deployment workflow
+- `src/App.tsx` — main application UI and badge generator logic
+- `src/main.tsx` — React entry point
+- `index.html` — HTML shell, favicon, and social metadata
+- `public/` — static assets such as the favicon and social preview
+- `vite.config.ts` — Vite configuration, including the deployment base path
+- `.github/workflows/deploy-pages.yml` — GitHub Pages deployment workflow
 
 ## Contributing
 
