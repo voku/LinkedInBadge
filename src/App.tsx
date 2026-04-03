@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Upload, Download, ZoomIn, Move, Terminal, Share2, Github } from "lucide-react";
 
 // --- Konstanten & Presets ---
+const PROJECT_URL = "https://voku.github.io/LinkedInBadge/";
+
 const PRESETS = [
   { label: "#FIRING", text: "#FIRING", color: "#dc2626", humorText: { en: "Boss who discovered Agentic-Coding?", de: "Chef, der Agentic-Coding entdeckt hat?" }, descriptionText: { en: "Show your network that you've discovered AI agents and are now showing half the team the door. You'll get this frame for your profile.", de: "Zeigen Sie Ihrem Netzwerk, dass Sie KI-Agenten entdeckt haben und nun das halbe Team vor die Tür setzen. Sie erhalten diesen Rahmen für Ihr Profil." }, image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" },
   { label: "#WORKSONMYMCHN", text: "#WORKSONMYMCHN", color: "#0d9488", humorText: { en: "Docker container crashed again?", de: "Docker-Container schon wieder abgestürzt?" }, descriptionText: { en: "Let all members know that the bug is definitely not in your code. You'll get this frame for your profile.", de: "Lassen Sie alle Mitglieder wissen, dass der Bug definitiv nicht an Ihrem Code liegt. Sie erhalten diesen Rahmen für Ihr Profil." }, image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" },
@@ -427,6 +429,7 @@ export default function App() {
         await navigator.share({
           title: t.shareTitle,
           text: t.shareText(text),
+          url: PROJECT_URL,
           files: [file]
         });
       } else {
