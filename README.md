@@ -1,20 +1,105 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# LinkedInBadge
 
-# Run and deploy your AI Studio app
+Create LinkedIn-style profile badges with developer-themed presets, custom text, image upload, and one-click export.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/7fab4b4f-57a7-4d31-a44d-8944131a9b05
+- Drag-and-drop or upload a profile photo
+- Apply developer humor presets or create a custom badge label
+- Adjust badge color and image zoom
+- Export or share the generated badge
+- Deploy as a static site, including GitHub Pages
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js 20+
+- npm
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+The app is served at `http://localhost:3000`.
+
+## Available Scripts
+
+- `npm run dev` — start the local development server
+- `npm run lint` — run TypeScript checks
+- `npm run build` — create a production build for the site root
+- `npm run build:pages` — create a production build for GitHub Pages under `/LinkedInBadge/`
+- `npm run preview` — preview the latest production build
+- `npm run clean` — remove the generated `dist/` directory
+
+## Production Build
+
+Build the app for deployment:
+
+```bash
+npm run build
+```
+
+To verify the production output locally:
+
+```bash
+npm run preview
+```
+
+## GitHub Pages Deployment
+
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml` that:
+
+- installs dependencies with `npm ci`
+- runs `npm run lint`
+- builds the app with the GitHub Pages base path
+- deploys the `dist/` folder to GitHub Pages
+
+To enable deployment:
+
+1. Open the repository settings on GitHub.
+2. Go to **Pages**.
+3. Set **Source** to **GitHub Actions**.
+4. Push to `main` or run the workflow manually.
+
+The published site URL is expected to be:
+
+`https://voku.github.io/LinkedInBadge/`
+
+## Key Files Detector Helper Prompt
+
+Use this prompt when you want an assistant to quickly identify the files that matter for a change:
+
+```text
+You are reviewing the LinkedInBadge repository. Identify the key files involved for this task, explain why each file matters, and call out any build, deployment, metadata, or documentation files that must be updated before shipping the change.
+```
+
+## Repository Structure
+
+- `src/App.tsx` — main application UI and badge generator logic
+- `src/main.tsx` — React entry point
+- `index.html` — HTML shell, favicon, and social metadata
+- `public/` — static assets such as the favicon and social preview
+- `vite.config.ts` — Vite configuration, including the deployment base path
+- `.github/workflows/deploy-pages.yml` — GitHub Pages deployment workflow
+
+## Contributing
+
+Contributions are welcome via issues and pull requests:
+
+https://github.com/voku/LinkedInBadge

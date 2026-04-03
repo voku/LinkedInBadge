@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">LinkedInBadge social preview</title>
+  <desc id="desc">Preview image for LinkedInBadge showing a developer-themed profile badge generator.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <g opacity="0.18">
+    <circle cx="142" cy="96" r="120" fill="#38bdf8" />
+    <circle cx="1110" cy="540" r="180" fill="#1d4ed8" />
+  </g>
+  <g transform="translate(90 75)">
+    <rect width="1020" height="480" rx="36" fill="rgba(15,23,42,0.72)" stroke="rgba(148,163,184,0.28)" />
+    <g transform="translate(72 76)">
+      <circle cx="154" cy="154" r="128" fill="#0f172a" />
+      <circle cx="154" cy="154" r="116" fill="none" stroke="url(#ring)" stroke-width="28" stroke-dasharray="428 116" stroke-linecap="round" transform="rotate(-42 154 154)" />
+      <circle cx="154" cy="154" r="82" fill="#1e293b" />
+      <text x="154" y="168" text-anchor="middle" fill="#e2e8f0" font-size="44" font-family="Arial, sans-serif" font-weight="700">#LGTM</text>
+    </g>
+    <g transform="translate(420 120)" fill="#f8fafc" font-family="Arial, sans-serif">
+      <text font-size="70" font-weight="700">LinkedInBadge</text>
+      <text y="96" font-size="34" fill="#cbd5e1">Create LinkedIn-style profile badges with developer humor.</text>
+      <g transform="translate(0 178)">
+        <rect width="256" height="56" rx="28" fill="#2563eb" />
+        <text x="128" y="37" text-anchor="middle" font-size="28" font-weight="700">Custom presets</text>
+      </g>
+      <g transform="translate(280 178)">
+        <rect width="248" height="56" rx="28" fill="#0f766e" />
+        <text x="124" y="37" text-anchor="middle" font-size="28" font-weight="700">Quick export</text>
+      </g>
+      <g transform="translate(0 282)">
+        <text font-size="28" fill="#e2e8f0">Deploy-ready static app for GitHub Pages.</text>
+      </g>
+    </g>
+  </g>
+</svg>

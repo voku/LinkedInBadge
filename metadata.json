@@ -1,5 +1,5 @@
 {
-  "name": "LinkedIn Developer Badge Generator",
-  "description": "Create custom LinkedIn-style profile badges with developer humor presets.",
+  "name": "LinkedInBadge",
+  "description": "Generate LinkedIn-style profile badges with developer-themed presets and custom text.",
   "requestFramePermissions": []
 }
